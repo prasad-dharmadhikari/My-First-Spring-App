@@ -1,0 +1,31 @@
+1) /post : 
+curl -X POST -H "Content-Type: application/json" -d "{ \"firstName\" : \"Prasad\", \"last
+Name\" : \"Dharmadhikari\" }" http://localhost:8080/hello/post
+
+2) /param/{name} : 
+curl -X GET "http://localhost:8080/hello/param/Prasad"
+
+3) /query : 
+curl -X GET "http://localhost:8080/hello/query/?name=Prasad"
+
+4)value = {"/", "", "/home"} :
+curl "http://localhost:8080/hello"
+curl "http://localhost:8080/hello/"
+curl "http://localhost:8080/hello/home"
+
+5) /put/{firstName} : 
+curl -X PUT "http://localhost:8080/hello/put/Prasad?lastName=Dharmadhikari"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
